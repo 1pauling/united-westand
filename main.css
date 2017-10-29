@@ -1,0 +1,74 @@
+/*
+Roxanne Low
+COM 214 Final Project
+Spring 2017
+*/   
+
+
+body {
+    background-color: floralwhite;
+    text-align: center;
+}
+
+div {
+    margin: auto; 
+    text-align:left;
+    width:50%; 
+}
+    
+
+div2
+{
+    border:darkred solid 2px; 
+    padding:20px;
+    margin:10px; 
+    background-color: white;
+    border-radius: 6px;
+}
+
+
+
+div4 {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#post {
+     border:darkred solid 1px; 
+    margin: 1px;
+    padding-top:5px; 
+    padding-left:10px;
+    padding-bottom:4px; 
+    margin:auto;
+
+    background-color:blanchedalmond;
+    border-radius:.5vh;
+    
+}
+#username,#contact,#date,#tag{
+    font: bold 10px verdana, sans-serif; 
+}
+#posttitle{
+    font: bold 20px verdana, sans-serif; 
+    text-align: center;
+    color:dodgerblue;
+}
+
+#getNLButt:hover{
+    color:deepskyblue;
+   
+     transform:scale(1.5,1.5);
+    }  
+
+#title{
+    font: bold 40px arial, sans-serif; 
+    text-align: center;
+    color:lightpink;
+}
+
+#titlecap{
+     font:  22px verdana, sans-serif; 
+    color:deeppink; 
+    align: center;
+}

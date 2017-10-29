@@ -1,0 +1,42 @@
+/*
+Roxanne Low
+COM 214 Final Project
+Spring 2017
+*/   
+
+
+body {
+    background-color: floralwhite;
+}
+
+h1  {
+    font: bold 30px arial, sans-serif; 
+    text-align: center;
+
+}
+
+body{
+    text-align: center;
+    font: normal 12px verdana, sans-serif; 
+    color:black;
+}
+
+#titlecap{
+    font-style: italic;
+}
+div {
+    margin: auto; 
+    text-align:left;
+    width:75%; 
+    
+}
+
+#doctable,#doctd{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-align: left; 
+    border-radius: 3px;
+    border: 1px solid blue;
+    border-collapse: collapse;
+}

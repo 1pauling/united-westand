@@ -1,0 +1,80 @@
+<!--Roxanne Low -->
+<!--COM 214 Final Project  -->
+<!--Spring 2017-->
+
+<!DOCTYPE html>
+<!-- Demonstrates how to add a user to an existing database -->
+<html>
+<head>
+    
+    <a href="index.php"> <img src="logo.png" style="width: 250px; height:250px;margin:auto; display:block"></a>
+<title> U.N.I.T.E.D </title>    <link ref="stylesheet" href="main.css">
+    
+</head>
+
+<body style="text-align:center; margin:75px;background-color: floralwhite;">
+	
+    <br><br>    
+    <div class="registration">
+        <table align="center">
+            <tr> 
+                <td><label>Name:</label></td>
+                <td><input type="text" id="username" name="username" placeholder="roxanneL" required /><br></td>
+            </tr>
+            
+             <tr>
+                <td><label>Password: </label></td>
+                <td><input type="password" id="password" name="password" placeholder="Password" required /><br></td>
+            </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><input type="text" id="email" name="email" placeholder="plow@conncoll.edu" required /><br></td>
+            </tr>
+              <tr>
+                <td><label>Telephone: </label></td>
+                <td><input type="number" id="telephone" name="telephone" placeholder="1(823)123-1223" required /><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button onclick = "getProfile()">Register</button></td>
+            </tr>
+        </table>
+            
+            
+            
+     
+    </div>
+
+    <script>
+        function getProfile(){
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    //alert("You succcessfully registered to join the community!");
+                    document.getElementById("output").innerHTML = xmlhttp.responseText;       
+                }     
+            };
+            var str = "adduser.php?";
+            str += "username=" + document.getElementById("username").value;
+            str += "&password=" + document.getElementById("password").value;
+            str += "&email=" + document.getElementById("email").value;
+            str += "&telephone=" + document.getElementById("telephone").value.toString();
+            console.log(str);
+            xmlhttp.open("GET",str,true);
+            xmlhttp.send();
+        }
+    </script>
+	
+    
+    <p>
+     For better communication, a real name is preferred. <br>If you have concerns about your privacy, use your first name or a nickname. <br>
+
+     Telephone number is visible only to registered users of this site. </p><br>
+
+    <a href="login.php">Back to Login page</a>
+
+    <div id = 'output' style="text-align:center;color:red;font-style: italic""></div>
+</body>
+</html>
