@@ -1,4 +1,4 @@
-# united-westand
+# U n I Embracing Diversity
 A web application that connects people through different intimate community activities. This application stands for U n I  Embracing Diversity Together.  We hope that everyone will see the beauty in differences. 
 
 To run this web application, make sure that you have the XAMPP installed in order to run the database locally on your computer. 
